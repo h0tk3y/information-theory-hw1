@@ -3,9 +3,22 @@
 
 ## Igushkin Sergey, ITMO University, M4139, BIB
 
+### Code
+
+See [`src/main/kotlin/NGrams.kt`](https://github.com/h0tk3y/information-theory-hw1/blob/master/src/main/kotlin/NGrams.kt), written in Kotlin language.
+
+### How to run
+
+```
+gradlew installApp
+build\install\ngrams\bin\ngrams file n
+```
+Where `file` is an absolute path to the file, `n` is the lenght of N-grams, e.g. 1, 2, 3, 4.
+
 ### Empiric probabilities 
 
- <details><summary>`n = 1`</summary><p>
+`n = 1` in file [`n1probabilities.txt`](https://github.com/h0tk3y/information-theory-hw1/blob/master/n1probabilities.txt)
+ <details><summary>(show)</summary><p>
  ```
 ␣ - 0.12348441951807013
 e - 0.06277132148731361
@@ -90,7 +103,8 @@ Q - 7.190300284915649E-5
 ! - 8.987875356144561E-6
 ```
  </p></details>
- <details><summary>`n = 2`</summary><p>
+ `n = 2` in file [`n2probabilities.txt`](https://github.com/h0tk3y/information-theory-hw1/blob/master/n2probabilities.txt)
+ <details><summary>(show)</summary><p>
  ```
 ↵% - 0.04992809635088981
 ,␣ - 0.014443645515009887
@@ -1625,7 +1639,8 @@ s? - 8.987956138774043E-6
 -r - 8.987956138774043E-6
  ```
  </p></details>
- <details><summary>`n = 3`</summary><p>
+ `n = 3` in file [`n3probabilities.txt`](https://github.com/h0tk3y/information-theory-hw1/blob/master/n3probabilities.txt)
+ <details><summary>(show)</summary><p>
  ```
  %A␣ - 0.010740704122812536
 ↵%A - 0.010731716085889681
@@ -9784,7 +9799,8 @@ e-r - 8.988036922855679E-6
 536 - 8.988036922855679E-6
  ```
  </p></details>
- <details><summary>`n = 4`</summary><p>
+ `n = 4` in file [`n3probabilities.txt`](https://github.com/h0tk3y/information-theory-hw1/blob/master/n4probabilities.txt)
+ <details><summary>(show)</summary><p>
  ```
  ↵%A␣ - 0.010731812543817073
 ↵%T␣ - 0.006516385338582394
@@ -28880,14 +28896,27 @@ P␣53 - 8.98811770838951E-6
  Calculated as `H_n(X) = sum { x in X^n } (-1 * p(x) * log2(p(x))) / n`
  
  `H_1(X) = 5.20067629976509 / 1 = 5.20067629976509`
+ 
  `H_2(X) = 8.56481256746895 / 2 = 4.282406283734475`
+ 
  `H_3(X) = 10.872321255101681 / 3 = 3.6241070850338937`
+ 
  `H_4(X) = 12.254447815919907 / 4 = 3.0636119539799767`
+ 
+ `H_5(X) = 13.143552749328187 / 5 = 2.6287105498656373`
+ 
+ `H_6(X) = 13.799162381588454 / 6 = 2.299860396931409`
 
 ### Comparison with an existing archiver
 
- ZIP Deflated compression (level 9) was used
- The riginal file size is `109 Kb`
- The compressed file size is `34.2 Kb`
+ ZIP Deflated compression (level 9) was used, the compressed file is [`src/main/resources/BIB.zip`](https://github.com/h0tk3y/information-theory-hw1/blob/master/src/main/resources/BIB.zip).
+ 
+ The riginal file size is `109 Kb`.
+ 
+ The compressed file size is `34.2 Kb`.
+ 
  Assuming that original encoding used `8` bits per character, the resulting encoding uses `2.51` bits per character.
+ 
  This value is much less than `H_4(X)` and lies between `H_5(X) = 2.6287105498656373` and `H_6(X) = 2.299860396931409`.
+ 
+ So, the applied compression is more efficient than perfect binary encoding of 4-grams (and 5-grams, but not 6-grams).
