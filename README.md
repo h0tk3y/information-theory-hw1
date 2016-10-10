@@ -18,7 +18,7 @@ Where `file` is an absolute path to the file, `n` is the lenght of N-grams, e.g.
 ### Empiric probabilities 
 
 `n = 1` in file [`n1probabilities.txt`](https://github.com/h0tk3y/information-theory-hw1/blob/master/n1probabilities.txt)
- <details><summary>(show)</summary><p>
+<details><summary>(show)</summary><p>
  ```
 ␣ - 0.12348441951807013
 e - 0.06277132148731361
@@ -102,9 +102,10 @@ Q - 7.190300284915649E-5
 + - 1.7975750712289123E-5
 ! - 8.987875356144561E-6
 ```
- </p></details>
- `n = 2` in file [`n2probabilities.txt`](https://github.com/h0tk3y/information-theory-hw1/blob/master/n2probabilities.txt)
- <details><summary>(show)</summary><p>
+</p></details>
+
+`n = 2` in file [`n2probabilities.txt`](https://github.com/h0tk3y/information-theory-hw1/blob/master/n2probabilities.txt)
+<details><summary>(show)</summary><p>
  ```
 ↵% - 0.04992809635088981
 ,␣ - 0.014443645515009887
@@ -1638,9 +1639,10 @@ x\ - 8.987956138774043E-6
 s? - 8.987956138774043E-6
 -r - 8.987956138774043E-6
  ```
- </p></details>
- `n = 3` in file [`n3probabilities.txt`](https://github.com/h0tk3y/information-theory-hw1/blob/master/n3probabilities.txt)
- <details><summary>(show)</summary><p>
+</p></details>
+
+`n = 3` in file [`n3probabilities.txt`](https://github.com/h0tk3y/information-theory-hw1/blob/master/n3probabilities.txt)
+<details><summary>(show)</summary><p>
  ```
  %A␣ - 0.010740704122812536
 ↵%A - 0.010731716085889681
@@ -9798,9 +9800,10 @@ e-r - 8.988036922855679E-6
 -53 - 8.988036922855679E-6
 536 - 8.988036922855679E-6
  ```
- </p></details>
- `n = 4` in file [`n3probabilities.txt`](https://github.com/h0tk3y/information-theory-hw1/blob/master/n4probabilities.txt)
- <details><summary>(show)</summary><p>
+</p></details>
+
+`n = 4` in file [`n3probabilities.txt`](https://github.com/h0tk3y/information-theory-hw1/blob/master/n4probabilities.txt)
+<details><summary>(show)</summary><p>
  ```
  ↵%A␣ - 0.010731812543817073
 ↵%T␣ - 0.006516385338582394
