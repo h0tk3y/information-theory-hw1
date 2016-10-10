@@ -1,7 +1,7 @@
 import java.io.File
 
 fun kGrams(input: String, k: Int): List<String> = (0..input.length - k).map { input.substring(it, it + k) }
-fun String.escapeNewLine() = replace("\n", "⏎")
+fun String.escapeNewLine() = replace("\n", "↵").replace(" ", "␣")
 
 fun <T> empiricProbabilities(items: List<T>): Map<T, Double> =
         items.groupBy { it }.mapValues { it.value.size.toDouble() / items.size }
@@ -20,7 +20,7 @@ fun main(args: Array<String>) {
 
     val probabilitiesDescending = probabilities.entries.sortedByDescending { it.value }
     for ((nGram, p) in probabilitiesDescending) {
-        println("${nGram.escapeNewLine()}\t- $p")
+        println("${nGram.escapeNewLine()} - $p")
     }
 
     println("\n--- H_n(x) ---\n")
