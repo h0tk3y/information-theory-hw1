@@ -3,7 +3,7 @@
 
 ## Igushkin Sergey, ITMO University, M4139, BIB
 
-1. Empiric probabilities 
+### Empiric probabilities 
 
  <details><summary>`n = 1`</summary><p>
  ```
@@ -28875,13 +28875,19 @@ P␣53 - 8.98811770838951E-6
  ```
  </p></details>
  
-# H_n(X)
+### H_n(X)
 
  Calculated as `H_n(X) = sum { x in X^n } (-1 * p(x) * log2(p(x))) / n`
  
- ```
- H_1(X) = 5.20067629976509 / 1 = 5.20067629976509
- H_2(X) = 8.56481256746895 / 2 = 4.282406283734475
- H_3(X) = 10.872321255101681 / 3 = 3.6241070850338937
- H_4(X) = 12.254447815919907 / 4 = 3.0636119539799767
- ```
+ `H_1(X) = 5.20067629976509 / 1 = 5.20067629976509`
+ `H_2(X) = 8.56481256746895 / 2 = 4.282406283734475`
+ `H_3(X) = 10.872321255101681 / 3 = 3.6241070850338937`
+ `H_4(X) = 12.254447815919907 / 4 = 3.0636119539799767`
+
+### Comparison with an existing archiver
+
+ ZIP Deflated compression (level 9) was used
+ The riginal file size is `109 Kb`
+ The compressed file size is `34.2 Kb`
+ Assuming that original encoding used `8` bits per character, the resulting encoding uses `2.51` bits per character.
+ This value is much less than `H_4(X)` and lies between `H_5(X) = 2.6287105498656373` and `H_6(X) = 2.299860396931409`.
