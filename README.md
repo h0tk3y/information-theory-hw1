@@ -9802,7 +9802,7 @@ e-r - 8.988036922855679E-6
  ```
 </p></details>
 
-`n = 4` in file [`n3probabilities.txt`](https://github.com/h0tk3y/information-theory-hw1/blob/master/n4probabilities.txt)
+`n = 4` in file [`n4probabilities.txt`](https://github.com/h0tk3y/information-theory-hw1/blob/master/n4probabilities.txt)
 <details><summary>(show)</summary><p>
  ```
  ↵%A␣ - 0.010731812543817073
